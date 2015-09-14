@@ -85,7 +85,7 @@ class Controller
       if (!$this->_login) $this->_user = null;
       else {
         // нет сессии - но есть возможность (кука) её воссоздать
-        $this->_user = $this->_mechanic->getUserByLogin($this->_login);
+        $this->_user = $this->_mechanic->getUserByLoginAndPassword($this->_login, $this->_password);
       }
     }
     else

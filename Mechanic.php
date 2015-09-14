@@ -27,6 +27,28 @@ class Mechanic
    * @param $login string - ключ поиска в БД
    * @return null|User - результат поиска
    */
+  function getUserByLoginAndPassword($login, $password)
+  {
+    $user = null;
+    if ($this->_result = $this->_msql->selectLoginPassword(array('`users`', '`login`', $login, '`password`', $password))) {
+      $user = new User();
+
+      $user->id_user = $this->_result['id_user'];
+      $user->id_role = $this->_result['id_role'];
+      $user->login = $this->_result['login'];
+      $user->password = $this->_result['password'];
+      $user->name = $this->_result['name'];
+
+    }
+    $this->error = $this->_msql->error;
+
+    return $user;
+  }
+  /**
+   * Определение посетителя по login в БД
+   * @param $login string - ключ поиска в БД
+   * @return null|User - результат поиска
+   */
   function getUserByLogin($login)
   {
     $user = null;
@@ -44,7 +66,6 @@ class Mechanic
 
     return $user;
   }
-
 
   /**
    * Определение посетителя по sid в БД

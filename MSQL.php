@@ -39,6 +39,21 @@ class MSQL
     mysql_close($this->_connection);
   }
 
+  public function selectLoginPassword(array $argv) //select(array('`users`', '`login`', $login, '`password`', $password)))
+  {
+    $resource = mysql_query("SELECT * FROM {$argv[0]} WHERE {$argv[1]} = '{$argv[2]}' AND {$argv[3]} = '{$argv[4]}'");
+
+    if (!($result = mysql_fetch_assoc($resource))) {
+      $this->error = mysql_error();
+    }
+
+    //print_r("SELECT * FROM {$argv[0]} WHERE {$argv[1]} = '{$argv[2]}' AND {$argv[3]} = '{$argv[4]}'".PHP_EOL.'<br/>');
+    //print_r('строк: '.mysql_num_rows($resource).PHP_EOL.'<br/>');
+
+
+    return $result;
+  }
+
   public function select(array $argv)
   {
     $resource = mysql_query("SELECT * FROM {$argv[0]} WHERE {$argv[1]} = '{$argv[2]}'");
@@ -47,8 +62,8 @@ class MSQL
       $this->error = mysql_error();
     }
 
-    print_r("SELECT * FROM {$argv[0]} WHERE {$argv[1]} = '{$argv[2]}'".PHP_EOL.'<br/>');
-    print_r('строк: '.mysql_num_rows($resource).PHP_EOL.'<br/>');
+    //print_r("SELECT * FROM {$argv[0]} WHERE {$argv[1]} = '{$argv[2]}'".PHP_EOL.'<br/>');
+    //print_r('строк: '.mysql_num_rows($resource).PHP_EOL.'<br/>');
 
 
     return $result;
@@ -58,19 +73,20 @@ class MSQL
   {
     $resource = mysql_query("DELETE FROM {$argv[0]} WHERE {$argv[1]} = '{$argv[2]}'");
 
-    print_r("DELETE FROM {$argv[0]} WHERE {$argv[1]} = '{$argv[2]}'".PHP_EOL.'<br/>');
-    print_r($resource.PHP_EOL.'<br/>');
-
+    //print_r("DELETE FROM {$argv[0]} WHERE {$argv[1]} = '{$argv[2]}'".PHP_EOL.'<br/>');
+    //var_export($resource);echo PHP_EOL.'<br/>';
+    //
+    //print_r('строк: '.mysql_affected_rows()); echo PHP_EOL.'<br/>';
     return mysql_affected_rows();
-    //return true;
   }
 
   public function update(array $argv) //update(array('`online`', '`time_last`', time(),'`sid`', $sid))
   {
     $resource = mysql_query("UPDATE {$argv[0]} SET {$argv[1]} = {$argv[2]} WHERE {$argv[3]} = '{$argv[4]}'");
 
-    print_r("UPDATE {$argv[0]} SET {$argv[1]} = {$argv[2]} WHERE {$argv[3]} = '{$argv[4]}'".PHP_EOL.'<br/>');
-    print_r($resource.PHP_EOL.'<br/>');
+    //print_r("UPDATE {$argv[0]} SET {$argv[1]} = {$argv[2]} WHERE {$argv[3]} = '{$argv[4]}'".PHP_EOL.'<br/>');
+    //var_export($resource);echo PHP_EOL.'<br/>';
+    //print_r('строк: '.mysql_affected_rows());echo PHP_EOL.'<br/>';
 
     return mysql_affected_rows();
   }
@@ -79,8 +95,9 @@ class MSQL
   {
     $resource = mysql_query("INSERT INTO {$table}({$argv[0]}, {$argv[2]}, {$argv[4]}) VALUES ('{$argv[1]}', {$argv[3]}, {$argv[5]})");
 
-    print_r("INSERT INTO {$table}({$argv[0]}, {$argv[2]}, {$argv[4]}) VALUES ('{$argv[1]}', {$argv[3]}, {$argv[5]})".PHP_EOL.'<br/>');
-    print_r($resource.PHP_EOL.'<br/>');
+    //print_r("INSERT INTO {$table}({$argv[0]}, {$argv[2]}, {$argv[4]}) VALUES ('{$argv[1]}', {$argv[3]}, {$argv[5]})".PHP_EOL.'<br/>');
+    //var_export($resource);echo PHP_EOL.'<br/>';
+    //print_r('строк: '.mysql_affected_rows());echo PHP_EOL.'<br/>';
 
     return mysql_affected_rows();
     //return false;
@@ -94,8 +111,8 @@ class MSQL
       $count = ((int)$result[0] > 0);
     }
 
-    print_r("SELECT COUNT(*) FROM {$argv[0]} WHERE {$argv[1]} = '{$argv[2]}'".PHP_EOL.'<br/>');
-    print_r('строк: '.mysql_num_rows($resource).PHP_EOL.'<br/>');
+    //print_r("SELECT COUNT(*) FROM {$argv[0]} WHERE {$argv[1]} = '{$argv[2]}'".PHP_EOL.'<br/>');
+    //print_r('строк: '.mysql_num_rows($resource).PHP_EOL.'<br/>');
 
     return $count;
   }
