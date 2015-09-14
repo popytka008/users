@@ -55,15 +55,16 @@ class C_Login extends Controller
       $this->_user = $this->_mechanic->getUserByLogin($login);
       // есть посетитель!!
       if ($this->_user) {
-        print_r($this->_user);
+        //print_r($this->_user);
         //необходим $_sid - генерируем!!
         //создаём запись в таблице активностей online по sid и uid
-        $this->runActivity();
-        //
-        // todo создать куку
-
-        header('Location: index.php');
-        exit();
+        if($this->runActivity()){
+          // ЗАПИСЬ В ТАБЛИЦУ АКТИВНОСТЕЙ ВНЕСЕНА:
+          // создаем куку (если флаг в форме "ЗАПОМНИТЬ")
+          // переходим на главную страницу
+          header('Location: index.php');
+          exit();
+        }
       }
       // что-то не так - неверный пароль/логин - вернуть форму
       // удалив возможные сессию и запись в таблице активностей

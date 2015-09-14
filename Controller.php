@@ -121,7 +121,7 @@ class Controller
     // создать запись активности
     // зарядить $_SESSION
     if(!$this->_sid) {$_SESSION['sid'] = $this->_sid = $this->createSid();}
-    $this->_mechanic->runActivity($this->_sid, $this->_user->id_user);
+    return $this->_mechanic->runActivity($this->_sid, $this->_user->id_user);
   }
 
   public function stopActivity()

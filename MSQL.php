@@ -62,6 +62,7 @@ class MSQL
     print_r($resource.PHP_EOL.'<br/>');
 
     return mysql_affected_rows();
+    //return true;
   }
 
   public function update(array $argv) //update(array('`online`', '`time_last`', time(),'`sid`', $sid))
@@ -82,6 +83,7 @@ class MSQL
     print_r($resource.PHP_EOL.'<br/>');
 
     return mysql_affected_rows();
+    //return false;
   }
 
   public function getCount(array $argv)/*array('`online`', '`sid`', $sid))*/
