@@ -1,5 +1,5 @@
 <?php
-require_once 'autoload.php';
+require_once 'etc/autoload.php';
 
 $page_status = '3';
 /**
