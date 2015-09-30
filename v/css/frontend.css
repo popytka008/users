@@ -1,0 +1,248 @@
+@CHARSET "UTF-8";
+
+.noDisplay {
+    display: none;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+}
+#main_wrapper {
+    width: 80%;
+    min-width: 980px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+}
+#main_head {
+    text-align: center;
+}
+#main_head > a {
+    font-size: 20px;
+    font-style: italic;
+    font-family: JosefinSlabRegular, Verdana, Arial, sans-serif;
+}
+#main_head ul.dropdown-menu > li {
+    text-align: left;
+}
+#main_menu {
+    padding-top: 6px;
+    margin: 0 14px 0 14px;
+}
+#main_menu .navbar-inner {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+#authInfoContainer {
+    clear: right;
+    float: right;
+    margin-right: 14px;
+    color: #1F4FA2;
+}
+#main_content {
+    padding: 5px 10px 0 10px;
+    min-height: 680px;
+}
+#main_footer {
+    min-height: 24px;
+    padding: 5px 8px 5px 8px;
+    margin-top: 15px;
+    clear: both;
+}
+#main_footer .copyright {
+    text-align: center;
+    padding-top: 3px;
+}
+
+#main_wrapper .clear {
+    clear: both;
+}
+#main_head .logo {
+    margin-bottom: 14px;
+}
+#online-help {
+    position: fixed;
+    right: -208px;
+    bottom: 5%;
+    width: 196px;
+    height: 56px;
+    padding: 5px;
+    font-size: 12px;
+    z-index: 10;
+}
+#online-help-open-close-button {
+    position: absolute;
+    padding: 6px;
+    left: -27px;
+    top: 9px;
+    background-color: #D9EDF7;
+    cursor: pointer;
+    z-index: 5;
+    -webkit-border-top-left-radius: 4px;
+    -webkit-border-bottom-left-radius: 4px;
+    -moz-border-radius-topleft: 4px;
+    -moz-border-radius-bottomleft: 4px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+#online-help-new-question {
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+.pagination-description {
+    margin-right: 25px;
+    font-size: 12px;
+    line-height: 22px;
+}
+
+.field_is_required {
+    color: #FF4500;
+    margin-left: 3px;
+    float: left;
+}
+.element_tooltip {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin: 0 -3px 0 -3px;
+    position: relative;
+    top: -10px;
+    background: url("../../img/frontend/info-icon.png") no-repeat center center;
+}
+.invisible {
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+.controls textarea {
+    min-width: 320px;
+}
+form .form_container_title {
+    text-decoration: underline;
+    margin-bottom: 15px;
+}
+.table tbody tr:hover td {
+    background-color: #DBDBDB;
+}
+
+#terms_and_conditions {
+    max-width: 860px;
+    max-height: 460px;
+    padding: 15px;
+    border: 2px solid #1F4FA2;
+    overflow: auto;
+}
+.content_container {
+    max-width: 860px;
+    padding: 15px;
+}
+#customer_main_page {
+    padding: 15px;
+}
+#security-visa .verified_by_visa_img, #security-mastercard .mastercard_img {
+    margin-right: 24px;
+    margin-bottom: 14px;
+}
+#security-visa .detailed_visa_info, #security-mastercard .detailed_mastercard_info {
+    margin: 20px 0;
+}
+#about .implemented_functionalities {
+    margin: 25px 0;
+}
+#about .implemented_functionalities > p {
+    font-weight: bold;
+    text-decoration: underline;
+}
+#about .implemented_functionalities > ul {
+    padding-left: 5px;
+}
+#info-faq {
+    margin-top: 20px;
+}
+#accept_terms_form {
+    margin-top: 18px;
+}
+#accept_terms_form strong {
+    display: block;
+    width: 800px;
+}
+
+.grid_container {
+    overflow: auto;
+}
+.grid_container .grid_subcontainer {
+    display: inline-block;
+}
+.grid_container th {
+    background-color: #A4A7AA;
+    white-space: nowrap;
+}
+.grid_container .icon-arrow-up, .grid_container .icon-arrow-down, .grid_container .icon-remove {
+    cursor: pointer;
+    margin: 0 3px;
+}
+.grid_container .table {
+    background-color: #FFFFFF;
+    color: #222222;
+    font-size: 11px;
+}
+.grid_container span.sorted {
+    color: white;
+}
+.grid_container a.sorted {
+    cursor: default;
+}
+.grid_container .delete_action, .grid_container .edit_action {
+    padding: 2px;
+    width: 16px;
+    height: 16px;
+    margin: 0 2px;
+}
+.grid_container .available_actions, .grid_filters .filters_column {
+    text-align: center;
+}
+.grid_container .add_action {
+    margin-left: 5px;
+}
+.filters_column .filter_action {
+    white-space: nowrap;
+}
+.form_container .back_action i, .grid_container .add_action i, .filters_column .filter_action i {
+    margin-right: 4px;
+}
+.grid_container .grid_filters {
+    background-color: #E6E5E5;
+}
+.grid_container .error_msg {
+    color: red;
+    font-weight: bold;
+}
+
+.form_files {
+    margin: 7px 0 5px 0;
+}
+.form_file {
+    margin-bottom: 3px;
+}
+
+#pollBlock {
+    position: absolute;
+    right: -1px;
+    bottom: 48px;
+    width: 192px;
+    padding: 5px;
+}
+#pollBlock label, #pollBlock .btn {
+    font-size: 12px;
+}
+#pollBlock .form-horizontal .control-group {
+    margin-bottom: 5px;
+}
+#pollBlock .form-horizontal .control-label {
+    padding-top: 0;
+}
+#pollBlock #pollsAddUserChoiceForm {
+    margin-bottom: 10px;
+}
