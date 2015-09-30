@@ -11,207 +11,29 @@
 
     <title>INDEX.PAGE</title>
 
-    <link href="css/ui-lightness/jquery-ui.min.css" media="screen" rel="stylesheet" type="text/css">
-    <link href="css/bootstrap.css" media="screen" rel="stylesheet" type="text/css">
-    <link href="css/bootstrap-responsive.min.css" media="screen" rel="stylesheet" type="text/css">
-    <link href="css/datepicker.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.css" media="screen" rel="stylesheet" type="text/css"/>
 
-    <link href="css/blueimp-gallery.min.css" media="screen" rel="stylesheet" type="text/css">
-    <link href="css/jquery.fileupload.css" media="screen" rel="stylesheet" type="text/css">
-    <link href="css/jquery.fileupload-ui.css" media="screen" rel="stylesheet" type="text/css">
-    <link href="css/frontend.css" media="screen" rel="stylesheet" type="text/css">
 
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
-    <script type="text/javascript" src="js/bootstrap-datepicker.ru.js"></script>
-    <script type="text/javascript" src="js/bootstrap-datepicker.uk.js"></script>
-    <script type="text/javascript" src="js/jquery.blockUI.js"></script>
-    <script type="text/javascript" src="js/jquery.scrollTo.js"></script>
-    <script type="text/javascript" src="js/jquery.cookie.js"></script>
 
-    <script type="text/javascript" src="js/tmpl.min.js"></script>
-    <script type="text/javascript" src="js/load-image.min.js"></script>
-    <script type="text/javascript" src="js/canvas-to-blob.min.js"></script>
-    <script type="text/javascript" src="js/jquery.blueimp-gallery.min.js"></script>
-
-    <script type="text/javascript" src="js/jquery.iframe-transport.js"></script>
-    <script type="text/javascript" src="js/jquery.fileupload.js"></script>
-    <script type="text/javascript" src="js/jquery.fileupload-process.js"></script>
-    <script type="text/javascript" src="js/jquery.fileupload-image.js"></script>
-    <script type="text/javascript" src="js/jquery.fileupload-audio.js"></script>
-    <script type="text/javascript" src="js/jquery.fileupload-video.js"></script>
-    <script type="text/javascript" src="js/jquery.fileupload-validate.js"></script>
-    <script type="text/javascript" src="js/jquery.fileupload-ui.js"></script>
-
-
-    <script type="text/javascript" src="js/core.js"></script>
-    <script type="text/javascript" src="js/grid.js"></script>
-    <script type="text/javascript" src="js/form.js"></script>
-    <script type="text/javascript" src="js/frontend.js"></script>
-    <link rel="icon" type="image/png" href="img/favicon.ico">
-
-    <style type="text/css">
-        body {
-            background-image: url("img/body-bg.jpg");
-            background-repeat: repeat-x;
-            background-color: #F2F2F2;
-        }
-        .navbar .nav > li {
-            margin-right: 2px;
-            font-size: 15px;
-        }
-    </style>
+    <link rel="icon" type="image/png" href="img/favicon.ico"/>
 </head>
 <body>
-<div id="main_wrapper" style="">
-    <div id="main_head">
-        <h1 class="noDisplay">УЕНС :: Ответы на часто задаваемые вопросы</h1>
-
-        <div style="background-image: url('img//head-center-bg.jpg'); height: 57px; width: 100%;">
-            <div class="pull-left" style="background-image: url('img/head-left-bg.jpg'); height: 57px; width: 26px;"></div>
-            <div class="pull-right" style="background-image: url('img/head-right-bg.jpg'); height: 57px; width: 26px;"></div>
-        </div>
-
-        <div class="pull-left logo" style="margin-left: 30px;">
-            <a href="http://donetskoblenergo.dn.ua/" target="_blank" title="ПАО &quot;ДТЭК ДОНЕЦКОБЛЭНЕРГО&quot;"><img style="padding-top: 9px;" alt="ДТЭК" src="https://www.myenergy.dn.ua/assets/img/frontend/dtek-logo.png"></a>
-        </div>
-
-        <div id="main_menu" class="navbar navbar-static-top clear"><div class="navbar-inner"><div class="container"><ul class="nav"><li class=""><a href="index.php">На главную</a></li><li class=""><a href="salary.php">Salary</a></li><li class="dropdown"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Безопасность<b class="caret"></b></a><ul class="dropdown-menu"><li><a href="private.php">Частная информация (private)</a></li><li><a href="login.php">Переподсоединиться</a></li><li><a href="/ru/index/security-mastercard">MasterCard® SecureCode™</a></li></ul></li><li class=""><a href="login.php">login</a></li><li class="dropdown active"><a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown">Потребителям<b class="caret"></b></a><ul class="dropdown-menu"><li><a href="/ru/index/info-tariffs">Тарифы</a></li><li class="active"><a href="/ru/index/info-faq">Ответы на часто задаваемые вопросы</a></li></ul></li><li class=""><a href="/ru/index/contacts">Контакты</a></li><li class=""><a href="/ru/customer/login">Войти</a></li></ul></div></div></div>    </div>
-    <div id="main_content">
-
-        <div id="info-faq-container" class="content_container">
-            <h2>Ответы на часто задаваемые вопросы</h2>
-
-            <div class="accordion" id="info-faq">
-                <div class="accordion-group">
-                    <div class="accordion-heading">
-                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#info-faq" href="#info-faq-1">
-                            Что такое CVV2-код?
-                        </a>
-                    </div>
-                    <div id="info-faq-1" class="accordion-body collapse" style="height: 0px;">
-                        <div class="accordion-inner">
-                            Это специальное число, состоящее из 3 цифр, которое обеспечивает дополнительную безопасность при транзакциях,
-                            при которых отсутствует сама карта, например, расчеты через интернет.
-                            Как правило CVV2-код написан на обороте карты (три цифры на полосе для подписи).
-                            Если на полосе для подписи больше трех цифр, Вы всегда вводите последние три цифры,
-                            первые цифры могут дублировать цифры номера платежной карты.
-                            <img alt="CVV2-код" src="https://www.myenergy.dn.ua/docs/cvv2.jpg" style="margin-top: 12px;">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-group">
-                    <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#info-faq" href="#info-faq-2">
-                            Почему не отображается платеж, проведенный не через этот сайт (который оплачен через другие банки, платежные терминалы, Приват24)?
-                        </a>
-                    </div>
-                    <div id="info-faq-2" class="accordion-body collapse">
-                        <div class="accordion-inner">
-                            Платежи, которые оплачены через другие банки, платежные терминалы и Приват24, поступают на расчетный счет РЭСа
-                            общей суммой на следующий день, после чего в течении нескольких дней в РЭС поступает файл с информацией о сумме платежа
-                            каждого абонента. И только после этого выполняется проведение платежа в базе данных РЭС и деньги поступят на Ваш лицевой счет.
-                            Поэтому вся процедура может занять до недели времени.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-group">
-                    <div class="accordion-heading">
-                        <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#info-faq" href="#info-faq-3">
-                            Как получить подтверждение оплаты через сайт?
-                        </a>
-                    </div>
-                    <div id="info-faq-3" class="accordion-body collapse" style="height: 0px;">
-                        <div class="accordion-inner">
-                            После проведения оплаты через сайт деньги будут сразу же зачислены на Ваш лицевой счет и отображены на главной странице сайта.
-                            Распечатать квитанцию об оплате вы можете в таблице «История интернет платежей».
-                            <br>
-                            Также Вы всегда можете получить выписку в банке, которому принадлежит Ваша платежная карта.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-group">
-                    <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#info-faq" href="#info-faq-4">
-                            Где можно скачать форму чистого бланка квитанции на оплату потребленной электроэнергии?
-                        </a>
-                    </div>
-                    <div id="info-faq-4" class="accordion-body collapse">
-                        <div class="accordion-inner">
-                            Скачать форму чистого бланка квитанции на оплату потребленной электроэнергии Вы можете внизу страницы,
-                            перейдя по ссылке на закладке <a href="https://www.myenergy.dn.ua/ru/index/info-tariffs">«Потребителям» - «Тарифы»</a>.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-group">
-                    <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#info-faq" href="#info-faq-5">
-                            Как оплатить текущую задолженность при помощи платежной карты?
-                        </a>
-                    </div>
-                    <div id="info-faq-5" class="accordion-body collapse">
-                        <div class="accordion-inner">
-                            Прочитать как правильно оплатить текущую задолженность при помощи платежной карты Вы можете
-                            перейдя по ссылке <a href="https://www.myenergy.dn.ua/docs/User_guide.pdf">"Руководство пользователя"</a>
-                            на закладке <a href="https://www.myenergy.dn.ua/ru/index/about">«О сервисе»</a>.
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-group">
-                    <div class="accordion-heading">
-                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#info-faq" href="#info-faq-6">
-                            Как формируется «Текущая задолженность» и «Переплата» на сайте?
-                        </a>
-                    </div>
-                    <div id="info-faq-6" class="accordion-body collapse">
-                        <div class="accordion-inner">
-                            «Текущая задолженность» формируется как сумма всех Ваших неоплаченных счетов с учетом всех оплат на текущий момент.
-                            <br>
-                            «Переплата» отображается на сайте со знаком «-» и формируется при наличии суммы оплат, которые остались
-                            после погашения всех Ваших неоплаченных счетов.
-                            Эта сумма будет автоматически использоваться для погашения Ваших новых счетов.
-                        </div>
-                    </div>
-                </div>
+<div class="container">
+    <div class="main_head">
+        <div id="main_menu" class="navbar navbar-default">
+            <div class="navbar-header">
+                <ul class="nav navbar-nav ">
+                    <li class="nav-justified"><a href="index.php">На главную</a></li>
+                    <li class=""><a href="salary.php">Salary</a></li>
+                    <li class=""><a href="private.php">Private</a></li>
+                    <li class=""><a href="login.php">Login</a></li>
+                </ul>
             </div>
-        </div>
-        <style type="text/css">
-            .AdSense-bottom {width: 728px; height: 90px;}
-        </style>
-        <div class="AdSense AdSense-bottom">
-            <script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-            <ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-2110758970147200" data-ad-slot="7647152173" data-adsbygoogle-status="done"><ins id="aswift_1_expand" style="display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent"><ins id="aswift_1_anchor" style="display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent"><iframe width="728" height="90" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_1" name="aswift_1" style="left:0;position:absolute;top:0;"></iframe></ins></ins></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
         </div>
     </div>
-    <div id="main_footer">
-        <div>
-            <div class="pull-left">
-                <span style="background: url('https://www.myenergy.dn.ua/docs/vbv_h23.gif') no-repeat center center; display: inline-block; width: 93px; height: 56px; vertical-align: top;"> </span>
-                <span style="background: url('https://www.myenergy.dn.ua/docs/mcsc_h23.gif') no-repeat center center; display: inline-block; width: 105px; height: 56px; vertical-align: top; margin-left: 1px;"> </span>
-            </div>
-
-            <div class="pull-right" style="margin-left: 160px;">
-                <span style="background: url('https://www.myenergy.dn.ua/docs/service_desc_img_visa_flag.jpg') no-repeat center center; display: inline-block; width: 89px; height: 51px; vertical-align: top;"> </span>
-                <span style="background: url('https://www.myenergy.dn.ua/docs/mc_accpt_023_gif.gif') no-repeat center center; display: inline-block; width: 89px; height: 56px; vertical-align: top; margin-left: 1px;"> </span>
-                <span style="background: url('https://www.myenergy.dn.ua/docs/ms_accpt_023_gif.gif') no-repeat center center; display: inline-block; width: 89px; height: 56px; vertical-align: top; margin-left: 1px;"> </span>
-            </div>
-
-            <div class="clear">
-                <p class="copyright">© 2012-2015 <img alt="УЕНС" src="https://www.myenergy.dn.ua/assets/img/frontend/logo.png" width="111"> <a href="http://www.uens.com.ua/">ООО «Укрэнергосистема»</a></p>
-            </div>
-        </div>
-
-    </div>
+    <h1>это индекс</h1>
 </div>
 </body>
 </html>
