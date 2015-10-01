@@ -30,14 +30,9 @@ class C_Private extends Controller {
      */
     public function onEnd()
     {
-        if (!$this->resolvePage()) {
-            //страница 404 (посетитель не зарегистрирован )
-            //или
-            //страница 404 (права доступа не соответствуют)
+        if (!$this->resolvePage())
             header('Location: p404.php');
-        } else
-            // если мы здесь, то права есть, очевидно (вторая часть логического выражения)
-            // подключим страницу
+        else
             $this->_vid->view('v/private.html');
 
         parent::onEnd();

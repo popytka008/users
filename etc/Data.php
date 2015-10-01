@@ -19,6 +19,10 @@ class Data
 //  const LOGIN_PHP   = '1';
 //  const SALARY_PHP  = '3';
 //  const PRIVATE_PHP = '3';
+  const DB = 'documents';
+  const HOST = 'localhost:3306';
+	const PASSWORD = '';
+	const USERNAME = 'root';
 
   /**
    * Data constructor.

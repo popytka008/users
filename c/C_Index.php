@@ -31,13 +31,8 @@ class C_Index extends Controller
   public function onEnd()
   {
     if (!$this->resolvePage()) {
-      //страница 404 (посетитель не зарегистрирован )
-      //или
-      //страница 404 (права доступа не соответствуют)
       header('Location: p404.php');
     } else
-      // если мы здесь, то права есть, очевидно (вторая часть логического выражения)
-      // подключим страницу
       $this->_vid->view('v/index.html');
 
     parent::onEnd();
